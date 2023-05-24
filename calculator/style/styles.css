@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', cursive;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #edf1f4;
+}
+
+.container {
+    position: relative;
+    width: 340px;
+    padding: 20px;
+    box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+        -15px -15px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.container .button {
+    position: relative;
+    display: grid;
+}
+
+.container .button #value {
+    position: relative;
+    grid-column: span 4;
+    user-select: none;
+    overflow: none;
+    text-align: end;
+    color: rgb(45, 33, 129);
+    height: 100%;
+    line-height: 100px;
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+span {
+    margin-top: 12px;
+}
+
+.container .button span {
+    position: relative;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 20px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    cursor: pointer;
+    user-select: none;
+    min-width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #666;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.container .button span:active {
+    box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.1), inset -5px -5px 20px rgba(0, 0, 0, 0.1);
+    color: #f44336;
+}
+
+.container .button span#clear {
+    grid-column: span 2;
+    background-color: #f44336;
+    color: #fff;
+    border: 1px solid #edf1f4;
+}
+
+.container .button span#plus{
+    grid-row: span 2;
+    background-color: #2196f3;
+    color: #fff;
+    border: 1px solid #edf1f4;
+}
+
+.container .button span#equal{
+    background-color: #31a035;
+    color: #fff;
+    border: 1px solid #edf1f4;
+}
+
+.container .button span#clear:active,
+.container .button span#plus:active,
+.container .button span#equal:active{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1), -5px -5px 10px rgba(0, 0, 0, 0.1),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
